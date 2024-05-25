@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
+import logo from "../assets/images/logo.png";
+import cart from "../assets/images/cart.png";
+import menu from "../assets/images/menu.png";
 function Nav() {
     useEffect(() => {
         const menuitems = document.getElementById('menuitems');
@@ -19,7 +21,7 @@ function Nav() {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src="Images\images\logo.png" alt="Logo" width="125px" />
+                <img src={logo} alt="Logo" width="125px" />
             </div>
             <nav>
                 <ul id="menuitems">
@@ -30,8 +32,8 @@ function Nav() {
                     <li><NavLink to="/accounts">Account</NavLink></li>
                 </ul>
             </nav>
-            <NavLink to="/cart"><img src="..\Images\images\cart.png" width="30px" height="30px"/></NavLink>
-            <img src="..\Images\images\menu.png" className="menu-icon" onClick={menutoggle} alt="Menu"/>
+            <NavLink to="/cart"><img src={cart} width="30px" height="30px"/></NavLink>
+            <img src={menu} className="menu-icon" onClick={menutoggle} alt="Menu"/>
         </div>
     );
 }

@@ -1,4 +1,7 @@
 import React from "react";
+import playstore from "../assets/images/play-store.png";
+import appstore from "../assets/images/app-store.png";
+import logo from "../assets/images/logo.png";
 var date=new Date;
 var year=date.getFullYear()
 function Footer() {
@@ -10,12 +13,12 @@ function Footer() {
             <h3>Download Our App</h3>
             <p>Download App for Android and iOS mobile phone.</p>
             <div className="app-logo">
-              <img src="../../Images/images/play-store.png" alt="Play Store" />
-              <img src="../../Images/images/app-store.png" alt="App Store" />
+              <img src={playstore} alt="Play Store" />
+              <img src={appstore} alt="App Store" />
             </div>
           </div>
           <div className="footer-col-2">
-            <img src="../../Images/images/logo-white.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
             <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
           </div>
           <div className="footer-col-3">

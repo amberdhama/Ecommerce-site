@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/images/image1.png"
 var a=10;
 function HeroHeader() {
     return (
@@ -12,7 +13,7 @@ function HeroHeader() {
                 <a href="" className="btn">Explore Now &#8594;</a>
             </div>
             <div className="col-2">
-                <img src="Images\images\image1.png" alt="Workout" />
+                <img src={img} alt="Workout" />
             </div>
         </div>
         </div>
