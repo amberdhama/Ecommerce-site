@@ -2,7 +2,7 @@ const row1=[
 {
     id:1,
     amount: 32,
-    img: "product-1.jpg", 
+    img: "src\assets\images\product-1.jpg", 
     prod_name: "Red Printed Tshirt", 
     fourth: "fa-solid fa-star",
     fifth: "fa-regular fa-star"
