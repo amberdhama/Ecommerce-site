@@ -49,9 +49,9 @@ function ProductsDetails() {
         <>
             <div className="smallcontainer single-product">
                 <div className="row">
-                    {/* <div className="col-2">
+                    <div className="col-2">
                         <img src={product?.img} width="100%" id="productimg" alt="Product" />
-                        <div className="small-img-row">
+                        {/* <div className="small-img-row">
                             <div className="small-img-col">
                                 <img src={gal1} alt="" width="100%" className="small-img" />
                             </div>
@@ -64,8 +64,8 @@ function ProductsDetails() {
                             <div className="small-img-col">
                                 <img src={gal4} alt="" width="100%" className="small-img" />
                             </div>
-                        </div>
-                    </div> */}
+                        </div> */}
+                    </div>
                     <div className="col-2">
                         <p>Home / T-Shirt</p>
                         <h1>{product?.prod_name}</h1>
