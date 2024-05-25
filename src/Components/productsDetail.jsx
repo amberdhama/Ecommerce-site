@@ -6,10 +6,10 @@ import Product1 from "/src/assets/images/product-1.jpg"
 import Product2 from "/src/assets/images/product-2.jpg"
 import Product3 from "/src/assets/images/product-3.jpg"
 import Product4 from "/src/assets/images/product-4.jpg"
-import gal1 from "../assets/images/gallery-1.jpg"
-import gal2 from "../assets/images/gallery-2.jpg"
-import gal3 from "../assets/images/gallery-3.jpg"
-import gal4 from "../assets/images/gallery-4.jpg"
+// import gal1 from "../assets/images/gallery-1.jpg"
+// import gal2 from "../assets/images/gallery-2.jpg"
+// import gal3 from "../assets/images/gallery-3.jpg"
+// import gal4 from "../assets/images/gallery-4.jpg"
 
 function ProductsDetails() {
     const { id } = useParams(); // Extract productId from URL
@@ -49,7 +49,7 @@ function ProductsDetails() {
         <>
             <div className="smallcontainer single-product">
                 <div className="row">
-                    <div className="col-2">
+                    {/* <div className="col-2">
                         <img src={product?.img} width="100%" id="productimg" alt="Product" />
                         <div className="small-img-row">
                             <div className="small-img-col">
@@ -65,7 +65,7 @@ function ProductsDetails() {
                                 <img src={gal4} alt="" width="100%" className="small-img" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="col-2">
                         <p>Home / T-Shirt</p>
                         <h1>{product?.prod_name}</h1>
