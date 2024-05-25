@@ -44,7 +44,7 @@ import React from "react";
 import FeaturedCol from "./FeaturedCol";
 import { NavLink } from "react-router-dom";
 import row1 from "./rows";
-import Product1 from "src\assets\images\product-1.jpg"
+import Product1 from "/src/assets/images/product-1.jpg"
 function FeaturedProd() {
   const featuredProducts = row1.slice(0, 4); // Get only the first 4 items
 
