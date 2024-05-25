@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import FeaturedCol from "./Featured Products/FeaturedCol";
 import { useParams } from "react-router-dom";
 import row1 from "./Featured Products/rows";
+import Product1 from "/src/assets/images/product-1.jpg"
+import Product2 from "/src/assets/images/product-2.jpg"
+import Product3 from "/src/assets/images/product-3.jpg"
+import Product4 from "/src/assets/images/product-4.jpg"
+import gal1 from "../assets/images/gallery-1.jpg"
+import gal2 from "../assets/images/gallery-2.jpg"
+import gal3 from "../assets/images/gallery-3.jpg"
+import gal4 from "../assets/images/gallery-4.jpg"
 
 function ProductsDetails() {
     const { id } = useParams(); // Extract productId from URL
@@ -45,16 +53,16 @@ function ProductsDetails() {
                         <img src={product?.img} width="100%" id="productimg" alt="Product" />
                         <div className="small-img-row">
                             <div className="small-img-col">
-                                <img src="Images\images\gallery-1.jpg" alt="" width="100%" className="small-img" />
+                                <img src={gal1} alt="" width="100%" className="small-img" />
                             </div>
                             <div className="small-img-col">
-                                <img src="Images\images\gallery-2.jpg" alt="" width="100%" className="small-img" />
+                                <img src={gal2} alt="" width="100%" className="small-img" />
                             </div>
                             <div className="small-img-col">
-                                <img src="Images\images\gallery-3.jpg" alt="" width="100%" className="small-img" />
+                                <img src={gal3} alt="" width="100%" className="small-img" />
                             </div>
                             <div className="small-img-col">
-                                <img src="Images\images\gallery-4.jpg" alt="" width="100%" className="small-img" />
+                                <img src={gal4} alt="" width="100%" className="small-img" />
                             </div>
                         </div>
                     </div>
@@ -89,10 +97,10 @@ function ProductsDetails() {
             <div className="smallcontainer">
                 <div className="row">
                 
-            <FeaturedCol img="../../../Images/images/product-1.jpg" prod_name="Red Printed Tshirt" fourth="fa-solid fa-star" fifth="fa-regular fa-star" amt={32}/>
-            <FeaturedCol img="../../../Images/images/product-2.jpg" prod_name="Black Sports Shoes" fourth="fa-solid fa-star-half-stroke" fifth="fa-regular fa-star" amt={45}/>
-            <FeaturedCol img="../../../Images/images/product-3.jpg" prod_name="Grey Trousers" fourth="fa-solid fa-star-half-stroke" fifth="fa-regular fa-star" amt={39.9}/>
-            <FeaturedCol img="../../../Images/images/product-4.jpg" prod_name="Blue Polo" fourth="fa-solid fa-star" fifth="fa-regular fa-star" amt={54}/>
+            <FeaturedCol img={Product1} prod_name="Red Printed Tshirt" fourth="fa-solid fa-star" fifth="fa-regular fa-star" amt={32}/>
+            <FeaturedCol img={Product2} prod_name="Black Sports Shoes" fourth="fa-solid fa-star-half-stroke" fifth="fa-regular fa-star" amt={45}/>
+            <FeaturedCol img={Product3} prod_name="Grey Trousers" fourth="fa-solid fa-star-half-stroke" fifth="fa-regular fa-star" amt={39.9}/>
+            <FeaturedCol img={Product4} prod_name="Blue Polo" fourth="fa-solid fa-star" fifth="fa-regular fa-star" amt={54}/>
                 </div>
             </div>
         </>
