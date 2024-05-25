@@ -42,7 +42,7 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <p className="copyright">Copyright {year} Suri Developers</p>
+      <p className="copyright">Copyright {year} Dhama Developers</p>
     </div>
   );
 }
